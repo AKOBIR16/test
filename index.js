@@ -16,6 +16,7 @@ mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser:true,useUnifiedTopolog
     if(err){
         console.log(err)
     }else{
+        
         console.log("Succesful connected to Mongodb")
     }
 })
