@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <% if(message){%>
+       <b> <%= message %>  </b>
+       <p></p>
+     <%}%>   
+
+    <form action="/" method="POST">
+        <div>
+            <label>Familiya</label>
+            <input type="text" name="lastName"></input>
+        </div>
+        <div>
+            <label>Ism</label>
+            <input type="text" name="firstName"></input>
+        </div>
+        <div>
+            <label>Otasining ismi</label>
+            <input type="text" name="surName"></input>
+            </div>
+            <label>Millati</label>
+                <select name="nationality">
+                    <option selected label="uzbekiston" value="uzbek" ></option> 
+                    <option  label="rossiya" value="Rus" ></option> 
+                    <option  label="tojikiston" value="tojik" ></option>
+                    <option  label="qirg'iziston" value="qirg'iz" ></option>
+                    <option  label="qozogiston" value="qozoq" ></option>
+                    <option  label="turkmaniston" value="turkman" ></option>
+                    <option  label="belorussiya" value="belorus" ></option>
+                    <option  label="armaniston" value="arman" ></option>
+                    <option  label="gruziya" value="gruz" ></option>
+                    <option  label="azarbayjon" value="azarbayjon" ></option>
+                    <option  label="ukraina" value="ukrain" ></option>
+                    <option  label="amerika" value="amerika" ></option>
+                    <option  label="yaponiya" value="yapon" ></option>
+                    <option  label="koreya" value="koreys" ></option>
+                    <option  label="saudiya arabistoni" value="arab" ></option>
+                    <option  label="fransiya" value="fransuz" ></option>
+                    <option  label="germaniya" value="nemis" ></option>
+                    <option  label="xitoy" value="xitoy" ></option>
+                    <option  label="braziliya" value="brazil" ></option>
+                    <option  label="argentina" value="argentina" ></option>
+                    <option  label="malayziya" value="malayziya" ></option>
+                </select>
+            </div>
+            <div>
+            <label>Passport seriya</label>
+            <input type="text" name="seriya" ></input>
+            </div>
+            <div>
+                <label>Passport nomer</label>
+                <input type="number" name="number" ></input>
+            </div>
+            <div>
+                <label>Kelgan sana</label>
+                <input type="date" name="registerDate" ></input>
+            </div>
+            <div>
+                <label>Ketgan sana</label>
+                <input type="date" name="registerOut"></input>
+            </div>
+            <div>
+                <label>Xona turi</label>
+                <select name="typeOfRoom">
+                    <option  label="Lyuks" value="lyuks" ></option>
+                    <option  label="O'rtacha" value="o'rtacha" ></option>
+                    <option  label="arzon" value="arzon" ></option>
+                </select>
+            </div>
+            <div>
+                <label>Xona kategoriyasi</label>
+                <select name="typeOfRooms">
+                    <option  label="1 kishilik" value="bir kishilik" ></option>
+                    <option  label="2 kishilik" value="ikki kishilik" ></option>
+                    <option  label="oilaviy" value="oilaviy" ></option>
+                </select>
+            </div>
+            <div>
+                <label>Xona Raqami</label>
+                <select name="numberOfRoom">
+                    <option  label="1" value="1" ></option>
+                    <option  label="2" value="2" ></option>
+                    <option  label="3" value="3" ></option>
+                    <option  label="4" value="4" ></option>
+                    <option  label="5" value="5" ></option>
+                    <option  label="6" value="6" ></option>
+                    <option  label="7" value="7" ></option>
+                    <option  label="8" value="8" ></option>
+                    <option  label="9" value="9" ></option>
+                    <option  label="10" value="10"></option>
+                </select>
+            </div>
+            <button type="submit">Saqlash</button>
+    </form>
+</body>
+</html>

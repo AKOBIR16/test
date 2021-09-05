@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="home" method="GET">
+        <div>
+         <label>Name</label>
+         <input type="text" name='name' >
+         </div>
+         <div>
+             <label>Shu sanadan keyin kelganlar</label>
+             <input type="date" name='publishedAfter'>
+          </div>
+          <div>
+            <label>Mamlakat kategoriyasi</label>
+            <select name="categoryOfUser" >
+                <option  label="Tanlanmasin" value="" ></option>
+                <option  label="Uzbekiston" value="uzbekiston" ></option>
+                <option  label="SNG mamlakatlari" value="SNG mamlakati" ></option>
+                <option  label="Boshqa mamlakatlar" value="Boshqa mamlakatlar" ></option>
+            </select>
+            </div>
+            <div>
+                <label>Xona turlari</label>
+                <select name="typeOfRoom">
+                    <option  label="Tanlanmasin" value="" ></option>
+                    <option  label="Lyuks" value="lyuks" ></option>
+                    <option  label="O'rtacha" value="o'rtacha" ></option>
+                    <option  label="arzon" value="arzon" ></option>
+                </select>
+            </div>
+         <button type="submit">Search</button>
+     </form> 
+     <button type="submit"><a href="/">Registratsiya</a></button>
+     <div><% query.forEach(user =>{ %>
+     <p>   Ismi:<%= user.firstName %></p>
+     <p>   Davlat kategoryasi:<%= user.categoryOfUser %>    </p>
+     <p>   Familiya:<%= user.lastName %></p>
+     <p>   Otasining ismi:<%= user.surName %></p>
+     <p>   Millati:<%= user.nationality %></p>
+     <p>   Passport seriyasi:<%= user.seriya %></p>
+     <p>   Passport raqami:<%= user.number %></p>
+     <p>   Registratsiya sana:<%= user.registerDate %></p>
+     <p>   Chiqqan sana:<%= user.registerOut %></p>
+     <p>   Xona turi:<%= user.typeOfRoom %></p>
+     <p>   Xona tasnif:<%= user.typeOfRooms %></p>
+     <p>   Xona raqami:<%= user.numberOfRoom %></p>
+     <p><b>keyingi</b></p>
+    <%})%>
+    </div>
+</body>
+</html>
