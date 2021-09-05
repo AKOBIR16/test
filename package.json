@@ -1,12 +1,12 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "You can registered via this site and can find about users",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Egamberdiyev Akobir",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
